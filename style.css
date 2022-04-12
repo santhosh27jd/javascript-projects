@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    width: 1000px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    background: url("./moun.jpg");
+    background-repeat:repeat;
+
+}
+#character{
+    width: 20px;
+    height: 50px;
+    position:relative;
+    top: 150px;
+    background: url("./dinosaur.png");
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 50px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 100px;}
+    30%{top: 50px;}
+    70%{top: 50px;}
+    100%{top: 100px;}
+}
+
+#block{
+    width: 120px;
+    height: 150px;
+    position: relative;
+    top: 85px;
+    left: 500px;
+    background: url("./cactus.png");
+    background-repeat: no-repeat;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 1000px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+img {  
+    max-width: 100%;  
+    height: auto;  
+    }  
