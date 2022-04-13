@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jump Game</title>
+    <title>Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game">
+    <div class="game"  onclick="jump()">
         <div id="character"></div>
         <div id="block"></div>
     </div>
     <p>SCORE: <span id="scoreSpan"></span></p>
+    <button id="start" type="button" onclick="start()">Start</button>
+    <button id="stop" type="button" onclick="reset()">Reset</button>
 </body>
 <script src="script.js"></script>
 </html>
